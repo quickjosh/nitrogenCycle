@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flow Pool Model</title>
+    <link rel="stylesheet" type="text/css" href="css/flowModelCustom.css">
+    <!--<script-->
+            <!--src="https://code.jquery.com/jquery-3.1.1.js"-->
+            <!--integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="-->
+            <!--crossorigin="anonymous"></script>-->
+</head>
+<body>
+<div id="flowContainer">
+    <select id="flowIncr">
+        <option value='0'>0</option>
+        <option value='.5'>.5</option>
+        <option value='1.0'>1.0</option>
+        <option value='1.5'>1.5</option>
+        <option value='2.0'>2.0</option>
+        <option value='2.5'>2.5</option>
+    </select>
+    <div id="timeElapsed">
+        <span>Time Elapsed (Year):<span id='year'>0</span></span>
+    </div>
+    <div id="treePool">
+        <div id='tree'>60</div>
+    </div>
+    <div id="soilPool">
+        <div id='soil'>120</div>
+    </div>
+    <div class="controlContainer">
+    <button id='10years' onClick="flowMaker()">Start</button>
+    <button id='reset' onClick="resetValue()">Reset</button>
+    </div>
+</div>
+
+<script src="js/fluxInteractive.js"></script>
+
+</body>
+</html>
