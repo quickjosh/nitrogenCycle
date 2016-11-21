@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="28ce71e7-35f8-46e1-b3a4-1f4a71c5f248" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flowModelCustom.css" afterPath="$PROJECT_DIR$/css/flowModelCustom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flowPoolModel.html" afterPath="$PROJECT_DIR$/flowPoolModel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/fluxInteractive.js" afterPath="$PROJECT_DIR$/js/fluxInteractive.js" />
     </list>
     <ignored path="nitrogenCycle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +27,8 @@
       <file leaf-file-name="flowPoolModel.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flowPoolModel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.333333">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="26" />
+            <state vertical-scroll-proportion="-1.875">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -38,10 +38,8 @@
         <entry file="file://$PROJECT_DIR$/js/fluxInteractive.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,8 +47,8 @@
       <file leaf-file-name="flowModelCustom.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/flowModelCustom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7522124">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.9292035">
+              <caret line="22" column="24" selection-start-line="21" selection-start-column="18" selection-end-line="22" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -64,8 +62,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/fluxInteractive.js" />
         <option value="$PROJECT_DIR$/flowPoolModel.html" />
+        <option value="$PROJECT_DIR$/js/fluxInteractive.js" />
         <option value="$PROJECT_DIR$/css/flowModelCustom.css" />
       </list>
     </option>
@@ -78,9 +76,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
-    <option name="y" value="35" />
-    <option name="width" value="1250" />
+    <option name="x" value="73" />
+    <option name="y" value="105" />
+    <option name="width" value="914" />
     <option name="height" value="777" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -165,7 +163,44 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="28ce71e7-35f8-46e1-b3a4-1f4a71c5f248" name="Default" comment="" />
@@ -176,14 +211,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="35" width="1250" height="777" extended-state="1" />
+    <frame x="73" y="105" width="914" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24979658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09742441" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -198,6 +233,14 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -206,28 +249,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/fluxInteractive.js">
+    <entry file="file://$PROJECT_DIR$/flowPoolModel.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flowPoolModel.html">
+    <entry file="file://$PROJECT_DIR$/js/fluxInteractive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.333333">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/flowModelCustom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7522124">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.9292035">
+          <caret line="22" column="24" selection-start-line="21" selection-start-column="18" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
