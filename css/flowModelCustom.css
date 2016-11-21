@@ -71,7 +71,7 @@ body {
 #tree,
 #soil {
     position:absolute;
-    top: 55px;
+    bottom: 10px;
     left:10px;
     background:brown;
     color:#fff;
@@ -79,16 +79,6 @@ body {
     border-radius:7px;
 }
 
-#soil {
-    position:absolute;
-    top: 55px;
-    left:10px;
-    background:brown;
-    color:#fff;
-    padding:10px;
-    border-radius:7px;
-
-}
 
 .controlContainer {
     position:absolute;
@@ -121,4 +111,27 @@ button {
 
 button:hover {
     background: #fff;
+}
+
+#flowIncrArrow {
+    position:absolute;
+    top: 55px;
+    left:30px;
+    height:425px;
+    width:60px;
+    border-left:2px solid red;
+    border-bottom:2px solid red;
+}
+
+#flowIncrArrow:after {
+    content:'';
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-left: 15px solid red;
+    border-bottom: 10px solid transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: 416px;
+    left: 50px;
 }
