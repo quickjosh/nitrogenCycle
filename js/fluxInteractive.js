@@ -5,6 +5,7 @@
 var START_YEARS = 0;
 var START_TREES = 60;
 var START_SOILNUM = 120;
+var treePool = document.getElementById("treePool");
 
 var years, trees, soilNum;
 resetValue();
@@ -15,11 +16,16 @@ function flowMaker() {
     years += 10;
     trees += 10;
     render();
-    var treePool = document.getElementById("treePool")
-    treePool.style.padding = adjustPixels(treePool.style.padding, 2)
 
     years===50 ? (document.getElementById("10years").disabled = true) : false;
-    console.log(fix)
+    if (treePool.style.padding === ""){
+        treePool.style.padding = "2px"
+    } else if (treePool.style.padding === "2px"){
+        treePool.style.padding = "4px"
+    } else if (treePool.style.padding === "4px") {
+        treePool.style.padding = "6px" } else {
+        treePool.style.padding = "8px"
+    }
 }
 
 // example input "2px", 2
@@ -44,6 +50,7 @@ function resetValue() {
     years = START_YEARS;//constants to reset values
     trees = START_TREES;
     soilNum = START_SOILNUM;
+    treePool.style.padding = "";
     render();
     document.getElementById("10years").disabled = false;
 }
