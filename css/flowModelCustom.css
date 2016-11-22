@@ -29,14 +29,15 @@ body {/*Overall font-size defined*/
 
 #soilPool {/*soil pool container*/
     position:absolute;
-    top:435px;
+    top:410px;
     right:30px;
     left:0;
     display: block;
-    width: 190px ;
-    height:100px;
+    width: 90px ;
+    height:0;
+    padding:65px;
     margin:0 auto 0 auto;
-    background: rgba(62, 31, 17, .5);
+    background: rgb(62, 31, 17);
     border-radius:7px;
     text-align:center;
 }
@@ -113,7 +114,6 @@ button:hover {/*button states*/
 }
 
 #flowIncrArrow {/*flowIncr line*/
-    z-index:2000;
     position:absolute;
     top: 55px;
     left:30px;
@@ -123,20 +123,6 @@ button:hover {/*button states*/
     border-left:4px solid red;
     border-bottom:4px solid red;
 }
-
-/*#flowArrow {/!*arrow connected to flowIncr line*!/*/
-    /*content:'';*/
-    /*position: absolute;*/
-    /*border-top: 15px solid transparent;*/
-    /*border-left: 10px solid red;*/
-    /*border-bottom: 15px solid transparent;*/
-    /*display: block;*/
-    /*width: 0;*/
-    /*z-index: 1;*/
-    /*top: 35%;*/
-    /*bottom:35%;*/
-    /*left: 0;*/
-/*}*/
 
 span.glyphicons.chevron-right {
     position: absolute;

@@ -1,7 +1,8 @@
 var START_YEARS = 0;//Initial value for years. Set as CONSTANT to prevent side-effects
 var START_TREES = 60;//Initial value for tree. Set as CONSTANT to prevent side-effects
 var START_SOILNUM = 120;//Initial value for years. Set as CONSTANT to prevent side-effects
-var flowIncrArrow = document.getElementById("flowIncrArrow");//Container for treePool
+var flowIncrArrow = document.getElementById("flowIncrArrow");//Container for arrow
+var soilPool = document.getElementById("soilPool");//Container for soilPool
 var treePool = document.getElementById("treePool");//Container for treePool
 var years, trees, soilNum;//Variables for reset function to change
 resetValue();//Call for reset function
@@ -23,6 +24,7 @@ function render() {//created to stop redundancy in the resetValue function
     document.getElementById("tree").innerHTML = trees;
     document.getElementById("year").innerHTML = years;
     document.getElementById("soil").innerHTML = soilNum;
+    soilPool.style.padding = Math.round(soilNum/10 + 50) + 'px';//
 }
 
 document.addEventListener("change", selectFlow);//changes select value which changes stroke width
@@ -32,7 +34,7 @@ function resetValue() {//resets value for years, trees soil and padding.
     trees = START_TREES;
     soilNum = START_SOILNUM;
     treePool.style.padding = "";
-    render();
+    render();//renders trees/years/soilNum/soilpoolpadding initial values
     flowIncrArrow.style.borderLeftWidth = "2px";//Resets stroke width to original on dropdown change
     flowIncrArrow.style.borderBottomWidth = "2px";//Resets stroke width to original on dropdown change
     document.getElementById("flowIncr").value = 0;
