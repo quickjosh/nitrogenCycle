@@ -12,33 +12,93 @@
 </head>
 <body>
 <div id="flowContainer">
+    <div class="flowIncrContain">
+        <span class="optionHeader">Fixation</span>
+        <div class="selectContain">
     <select id="flowIncr">
-        <option value='0'>0</option>
-        <option value='.5'>.5</option>
+        <option value='0'>0.0</option>
+        <option value='.5'>0.5</option>
         <option value='1.0'>1.0</option>
         <option value='1.5'>1.5</option>
         <option value='2.0'>2.0</option>
         <option value='2.5'>2.5</option>
     </select>
-
+    </div>
+    </div>
     <div id="timeElapsed">
         <span>Time Elapsed (Year):<span id='year'>0</span></span>
     </div>
-    <div id="treePool">
+    <div class= "treePosition">
+        <div class="decompContain">
+            <span class="optionHeader">Decomposition</span>
+            <div class="selectContain">
+            <select id="decompInc">
+                <option value='0.0'>0.0</option>
+                <option value='1.0'>1.0</option>
+                <option value='2.0'>2.0</option>
+                <option value='3.0'>3.0</option>
+                <option value='4.0'>4.0</option>
+                <option value='5.0'>5.0</option>
+            </select>
+            </div>
+        </div>
         <div id='tree'>60</div>
+    <div id="treePool">
+        <div id="uptakeArrow"></div>
+        <div class="arrowUp"></div>
+
+    </div>
     </div>
     <div id="flowIncrArrow" style="border-left-width:2px; border-bottom-width:2px;">
         <!--<span class="glyphicons chevron-right"></span>-->
     </div>
-    <div id="soilPool">
-        <!--<div id="flowArrow"></div>-->
+
+    <div class="dentContain">
+        <span class="optionHeader">Decomposition</span>
+        <div class="selectContainRev2">
+            <select id="dentInc">
+                <option value='0.0'>0.0</option>
+                <option value='1.0'>1.0</option>
+                <option value='2.0'>2.0</option>
+                <option value='3.0'>3.0</option>
+                <option value='4.0'>4.0</option>
+                <option value='5.0'>5.0</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="uptakeContain">
+        <div class="selectContainRev">
+            <select id="uptakeInc">
+                <option value='0.0'>0.0</option>
+                <option value='1.0'>1.0</option>
+                <option value='2.0'>2.0</option>
+                <option value='3.0'>3.0</option>
+                <option value='4.0'>4.0</option>
+                <option value='5.0'>5.0</option>
+            </select>
+
+        </div>
+        <span class="optionHeader" style="margin:0 0 0 -20px!important">Uptake</span>
+    </div>
+    <div class="soilPosition">
         <div id='soil'>120</div>
+    <div id="soilPool">
+        <div id="decompArrow">
+        </div>
+        <span class="arrowRight"></span>
+        <span class="arrowDown"></span>
+
+    </div>
     </div>
     <div class="controlContainer">
     <button id='10years' onClick="flowMaker()">Start</button>
     <button id='reset' onClick="resetValue()">Reset</button>
     </div>
+    <div id="dentrArrow"></div>
+    <span class="arrowUp2"></span>
 </div>
+
 
 <script src="js/fluxInteractive.js"></script>
 

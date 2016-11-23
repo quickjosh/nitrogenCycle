@@ -6,40 +6,66 @@ body {/*Overall font-size defined*/
 #flowContainer {/*Background image of interactive*/
     position:relative;
     display:block;
+    margin:0 auto;
     width:420px;
     height:620px;
-    margin: 0 auto;
     background-repeat:no-repeat;
     background-image: url('../images/poolFlow.png');
 }
 
 #treePool {/*tree pool container*/
-    position:absolute;
-    display: block;
-    top:175px;
-    right:30px;
-    left:0;
-    height:100px;
-    width: 190px ;
-    margin:0 auto 0 auto;
-    border-radius:7px;
-    background: rgba(151, 255, 0, 0.5);
+    background: rgba(151, 255, 0, 0.7);
+    box-shadow: 0 0 10px 5px rgba(151, 255, 0, 0.7);
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:114px;
+    width: 207px;
+    border-radius:50%;
     text-align:center;
 }
 
-#soilPool {/*soil pool container*/
+.treePosition {
+    z-index:10!important;
     position:absolute;
-    top:410px;
-    right:30px;
+    top:104px;
     left:0;
+    width:418px;
+    height: 200px;
     display: block;
-    width: 90px ;
-    height:0;
+    justify-content: center;
+
+}
+
+.soilPosition {
+    z-index:1!important;
+    position:absolute;
+    top:384px;
+    left:0;
+    width:418px;
+    height: 200px;
+    display: block;
+    justify-content: center;
+}
+
+#soilPool {/*soil pool container*/
+    z-index:0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 130px ;
+    height:10px;
     padding:65px;
-    margin:0 auto 0 auto;
-    background: rgb(62, 31, 17);
-    border-radius:7px;
+    background: rgb(68, 27, 0);
+    border-radius:50%;
     text-align:center;
+    box-shadow: 0 0 10px 5px rgb(68, 27, 0);
 }
 
 #timeElapsed {/*years container*/
@@ -68,15 +94,30 @@ body {/*Overall font-size defined*/
     float:right!important;
 }
 
-#tree,/*containers for tree/soil value readouts*/
-#soil {
+#tree/*containers for tree/soil value readouts*/  {
+    z-index:20;
     position:absolute;
-    left:10px;
-    bottom:10px;
+    left:120px;
+    top: 60px;
     background:brown;
     color:#fff;
     padding:10px;
     border-radius:7px;
+    height:15px;
+    border: solid 2px white;
+}
+
+#soil {
+    z-index:20;
+    position:absolute;
+    left:110px;
+    bottom: 50px;
+    background:brown;
+    color:#fff;
+    padding:10px;
+    border-radius:7px;
+    height:15px;
+    border: solid 2px white;
 }
 
 
@@ -91,15 +132,101 @@ body {/*Overall font-size defined*/
     text-align:center;
 }
 
+.optionHeader {
+    color:red;
+    font-size:12px;
+    text-align:left;
+    margin:20px 0!important;
+
+}
+
+#flowIncr,
+#decompInc {/*button positioning/style*/
+    float:left;
+    margin:-9px 0 0 4px;
+}
+
 #flowIncr {/*button positioning/style*/
+}
+
+.flowIncrContain {
+    z-index:1000;
+    height:51px;
+    width:48px;
     font-size:14px;
     position:absolute;
-    top: 30px;
-    left:10px;
+    padding:5px 0;
+    top: 20px;
+    left:14px;
     right:0;
-    padding:10px;
-    border-radius:7px;
     text-align:center;
+    border-radius:7px;
+}
+
+.selectContainRev2 {
+   background:red;
+    padding:5px 0;
+    margin:7px 0 0 30px;
+    border-radius:5px;
+    width:48px!important;
+}
+
+.selectContain {
+    background:red;
+    padding:13px 0;
+    margin:7px 0 0 0;
+    border-radius:5px;
+    width:48px!important;
+}
+
+.selectContainRev {
+    background:red;
+    padding:4px 0;
+    margin:7px 0 5px 0;
+    border-radius:5px;
+    width:48px!important;
+}
+
+.dentContain {
+    z-index:1000;
+    height:45px;
+    width:60px;
+    font-size:14px;
+    position:absolute;
+    padding:5px 0;
+    bottom: 210px;
+    right:56px;
+    text-align:center;
+    border-radius:7px;
+
+}
+
+.decompContain {
+    z-index:1000;
+    height:45px;
+    width:60px;
+    font-size:14px;
+    position:absolute;
+    padding:5px 0;
+    top: 110px;
+    left:120px;
+    right:0;
+    text-align:center;
+    border-radius:7px;
+}
+
+.uptakeContain  {
+    z-index:1000;
+    height:45px;
+    width:60px;
+    font-size:14px;
+    position:absolute;
+    padding:5px 0;
+    top: 406px;
+    left:255px;
+    right:0;
+    text-align:center;
+    border-radius:7px;
 }
 
 button {/*button styles*/
@@ -116,26 +243,104 @@ button:hover {/*button states*/
 #flowIncrArrow {/*flowIncr line*/
     position:absolute;
     top: 55px;
-    left:30px;
+    left:37px;
     height:427px;
-    width:72px;
+    width:112px;
     border-bottom-left-radius:8px;
     border-left:4px solid red;
     border-bottom:4px solid red;
 }
 
-span.glyphicons.chevron-right {
+#dentrArrow {
+    z-index:0;
     position: absolute;
-    display: block;
-    width: 0;
-    z-index: 1;
-    top: 96%;
-    bottom:35%;
-    left: 58px;
-    color:red;
+    top: 102px;
+    right: 30px;
+    height: 380px;
+    width: 110px;
+    border-bottom-right-radius: 8px;
+    border-right: 2px solid red;
+    border-bottom: 2px solid red;
 }
 
-span.glyphicons.chevron-right:before {
-    color:red;
-    font-size:28px;
+select {
+    border-radius:3px;
 }
+
+.arrowRight {
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: 0;
+    bottom:0;
+    left: -12px;
+    color:red;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 12px solid red;
+}
+
+.arrowUp2 {
+    position: absolute;
+    display: block;
+    margin: auto;
+    top:90px;
+    right:19px;
+    color:red;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 15px solid #f00;
+}
+
+.arrowDown {
+    position: absolute;
+    display: block;
+    margin: auto;
+    top: 0;
+    right:180px;
+    color:red;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 15px solid #f00;
+}
+
+.arrowUp {
+    position: absolute;
+    display: block;
+    margin: auto;
+    bottom:5px;
+    right:19px;
+    color:red;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 15px solid #f00;
+}
+
+#uptakeArrow {
+    z-index:1;
+    position: absolute;
+    border-right: 1px solid red;
+    bottom: -165px;
+    right:31px;
+    height:170px;
+}
+
+#decompArrow {
+    position: absolute;
+    border-right: 1px solid red;
+    top: -170px;
+    right:192px;
+    height:170px;
+}​
+
+
+
+
