@@ -29,7 +29,6 @@ body {/*Overall font-size defined*/
 }
 
 .treePosition {
-    z-index:10!important;
     position:absolute;
     top:104px;
     left:0;
@@ -74,11 +73,12 @@ body {/*Overall font-size defined*/
     right:20px;
     text-align:center;
     display: block;
-    width: 195px;
+    width: 185px;
     height:35px;
     margin:0 auto 0 auto;
-    border: solid 1px red;
+    border: solid 1px #2e5e73;
     border-radius:7px;
+    color:#2e5e73;
 }
 
 
@@ -99,12 +99,14 @@ body {/*Overall font-size defined*/
     position:absolute;
     left:120px;
     top: 60px;
-    background:brown;
+    background: #367300;
     color:#fff;
     padding:10px;
     border-radius:7px;
+    width:23px;
     height:15px;
     border: solid 2px white;
+    text-align:center;
 }
 
 #soil {
@@ -112,12 +114,14 @@ body {/*Overall font-size defined*/
     position:absolute;
     left:110px;
     bottom: 50px;
-    background:brown;
+    background: #000000;
     color:#fff;
     padding:10px;
     border-radius:7px;
     height:15px;
+    width:23px;
     border: solid 2px white;
+    text-align:center;
 }
 
 
@@ -133,11 +137,19 @@ body {/*Overall font-size defined*/
 }
 
 .optionHeader {
-    color:red;
-    font-size:12px;
+    margin:20px 0 0 -2px!important;
+    color:#fff;
+    font-size:11px;
+    text-align:left;
+    font-weight:bolder;
+}
+
+.optionHeaderDark {
+    color: #000000;
+    font-size:11px;
     text-align:left;
     margin:20px 0!important;
-
+    font-weight:bolder;
 }
 
 #flowIncr,
@@ -163,16 +175,17 @@ body {/*Overall font-size defined*/
     border-radius:7px;
 }
 
-.selectContainRev2 {
-   background:red;
+.selectContainDark2 {
+   background: #c84c00;
     padding:5px 0;
-    margin:7px 0 0 30px;
+    margin:7px 0 0 22px;
     border-radius:5px;
     width:48px!important;
+    font-weight:bolder;
 }
 
 .selectContain {
-    background:red;
+    background:#63a941;
     padding:13px 0;
     margin:7px 0 0 0;
     border-radius:5px;
@@ -180,7 +193,15 @@ body {/*Overall font-size defined*/
 }
 
 .selectContainRev {
-    background:red;
+    background:#63a941;
+    padding:4px 0;
+    margin:7px 0 5px 0;
+    border-radius:5px;
+    width:48px!important;
+}
+
+.selectContainDark {
+    background:#c84c00;
     padding:4px 0;
     margin:7px 0 5px 0;
     border-radius:5px;
@@ -195,7 +216,7 @@ body {/*Overall font-size defined*/
     position:absolute;
     padding:5px 0;
     bottom: 210px;
-    right:56px;
+    right:50px;
     text-align:center;
     border-radius:7px;
 
@@ -209,7 +230,7 @@ body {/*Overall font-size defined*/
     position:absolute;
     padding:5px 0;
     top: 110px;
-    left:120px;
+    left:117px;
     right:0;
     text-align:center;
     border-radius:7px;
@@ -242,105 +263,121 @@ button:hover {/*button states*/
 
 #flowIncrArrow {/*flowIncr line*/
     position:absolute;
+    display:none;
     top: 55px;
     left:37px;
     height:427px;
     width:112px;
     border-bottom-left-radius:8px;
-    border-left:4px solid red;
-    border-bottom:4px solid red;
+    border-left:1px solid #63a941;
+    border-bottom:1px solid #63a941;
 }
 
 #dentrArrow {
+    display:none;
     z-index:0;
     position: absolute;
     top: 102px;
-    right: 30px;
+    right: 29px;
     height: 380px;
     width: 110px;
     border-bottom-right-radius: 8px;
-    border-right: 2px solid red;
-    border-bottom: 2px solid red;
+    border-right: 1px solid #c84c00;
+    border-bottom: 1px solid #c84c00;
 }
 
 select {
     border-radius:3px;
 }
 
-.arrowRight {
+#arrowRight {
     position: absolute;
-    display: block;
+    display:none;
     margin: auto;
     top: 0;
     bottom:0;
     left: -12px;
-    color:red;
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 12px solid red;
+    border-left: 12px solid #63a941;
 }
 
-.arrowUp2 {
+
+#arrowUp2 {
+    display: none;
     position: absolute;
-    display: block;
     margin: auto;
     top:90px;
     right:19px;
-    color:red;
     width: 0;
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 15px solid #f00;
+    border-bottom: 15px solid #c84c00;
 }
 
-.arrowDown {
+#arrowDown {
+    display:none;
     position: absolute;
-    display: block;
     margin: auto;
     top: 0;
     right:180px;
-    color:red;
     width: 0;
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-top: 15px solid #f00;
+    border-top: 15px solid #63a941;
 }
 
-.arrowUp {
+#arrowUp {
+    display: none;
     position: absolute;
-    display: block;
     margin: auto;
     bottom:5px;
     right:19px;
-    color:red;
     width: 0;
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 15px solid #f00;
+    border-bottom: 15px solid #c84c00;
 }
 
 #uptakeArrow {
-    z-index:1;
     position: absolute;
-    border-right: 1px solid red;
+    border-right: 1px solid #c84c00;
     bottom: -165px;
     right:31px;
     height:170px;
 }
 
 #decompArrow {
+    display:none;
     position: absolute;
-    border-right: 1px solid red;
+    border-right: 1px solid #63a941;
     top: -170px;
     right:192px;
     height:170px;
-}​
+}​,
 
+.soilTitle {
+    color:#fff;
+     position:absolute;
+     bottom:95px;
+     right:140px;
+    z-index:1000;
+     font-weight:bolder;
+ }
+
+.treeTitle {
+    font-weight:bolder;
+    z-index:1000;
+    position:absolute;
+    top:178px;
+    left:175px;
+
+}
 
 
 
