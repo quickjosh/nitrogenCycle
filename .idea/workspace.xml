@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28ce71e7-35f8-46e1-b3a4-1f4a71c5f248" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/poolFlow.png" afterPath="$PROJECT_DIR$/images/poolFlow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flowModelCustom.css" afterPath="$PROJECT_DIR$/css/flowModelCustom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flowPoolModel.html" afterPath="$PROJECT_DIR$/flowPoolModel.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/fluxInteractive.js" afterPath="$PROJECT_DIR$/js/fluxInteractive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="28ce71e7-35f8-46e1-b3a4-1f4a71c5f248" name="Default" comment="" />
     <ignored path="nitrogenCycle.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,7 +89,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="62" />
-    <option name="y" value="229" />
+    <option name="y" value="228" />
     <option name="width" value="1250" />
     <option name="height" value="1001" />
   </component>
@@ -231,7 +225,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="62" y="229" width="1250" height="1001" extended-state="6" />
+    <frame x="62" y="228" width="1250" height="1001" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
