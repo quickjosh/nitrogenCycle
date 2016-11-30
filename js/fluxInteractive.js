@@ -19,40 +19,53 @@ function flowMaker() {//Button for increasing fixation
     var uptakeValue = document.getElementById("uptakeInc").value;//Points to value for options
     var decompValue = document.getElementById("decompInc").value;//Points to value for options
 
-    //var fix = document.getElementById("flowIncr").value;//Points to value for options
-    //soilNum += ((fix / .5) - 3) * 5;//Equation for amount of soil nitrogen using fix values
-    //trees += 10;//Value for tree incrementer
-
-    years === 100 ? (document.getElementById("10years").disabled = true) : false;//Disables button at value 50years
-    //var padding = treePool.style.padding;//Increases padding for tree pool
-    //padding = Number(padding.slice(0, padding.length - 2));
-    //treePool.style.padding = (padding + 2) + 'px';
-
     years += 10;//Value for year incrementer
+    years === 500 ? (document.getElementById("10years").disabled = true) : false;//Disables button at value 50years
+
     soilNum += ((fixValue * 10) + (decompValue * 10)) - ((uptakeValue * 10) + (dentValue * 10));//equations for output
     trees += ((uptakeValue * 10) - (decompValue * 10));//equations for output
     if (trees<=0) {
         trees = 0;
-        document.getElementById("treePool").style.display = "none";
+        document.getElementById("treePool").style.background = "none";
+        document.getElementById("treePool").style.boxShadow = "none";
+        document.getElementById("treePool").style.padding = "29px";
+
     } else {
-        document.getElementById("treePool").style.display = "block";
+        document.getElementById("treePool").style.background = "";
+        document.getElementById("treePool").style.boxShadow = "";
+        document.getElementById("treePool").style.padding = "";
     }
 
-    if (soilNum>=200) {
-        soilNum = 200;
-
+    if (soilNum<=0) {
+        soilNum = 0;
+        document.getElementById("soilPool").style.background = "rgba(68, 27, 0,.1)";
+        document.getElementById("soilPool").style.boxShadow = "0 0 10px 5px rgba(68, 27, 0,.1)";
+        document.getElementById("soilPool").style.padding = "78px";
+    } else {
+        document.getElementById("soilPool").style.background = "";
+        document.getElementById("soilPool").style.boxShadow = "";
+        document.getElementById("soilPool").style.padding = "";
     }
-
     render();
 }
-
 
 
 function render() {//created to stop redundancy in the resetValue function
     document.getElementById("tree").innerHTML = trees;
     document.getElementById("year").innerHTML = years;
     document.getElementById("soil").innerHTML = soilNum;
-    soilPool.style.padding = Math.round(soilNum/10 + 50) + 'px';//
+    soilPool.style.padding = Math.round(soilNum/30 + 50) + 'px';//
+    treePool.style.padding = Math.round(trees/30 + 10) + 'px';//
+    if (soilNum>=820) {
+        document.getElementById("soilPool").style.padding = "79px";
+
+    }
+
+    if (trees>=710) {
+
+
+    }
+
 }
 
 function resetValue() {//resets value for years, trees soil and padding.
@@ -60,22 +73,15 @@ function resetValue() {//resets value for years, trees soil and padding.
     trees = START_TREES;
     soilNum = START_SOILNUM;
     treePool.style.padding = "";
-    document.getElementById("treePool").style.display = "block";
-    render();//renders trees/years/soilNum/soilpoolpadding initial values
-    //
-    //flowIncrArrow.style.borderLeftWidth = "0px";//Resets stroke width to original on dropdown change
-    //flowIncrArrow.style.borderBottomWidth = "0px";//Resets stroke width to original on dropdown change
-    //document.getElementById("arrowRight").style.display = "none";
-    //
-    //decompArrow.style.borderRightWidth = "0px";
-    //document.getElementById("arrowDown").style.display = "none";
-    //
-    //uptakeArrow.style.borderRightWidth = "0px";
-    //document.getElementById("arrowUp").style.display = "none";
-    //
-    //dentrArrow.style.borderRightWidth = "0px";//Resets stroke width
-    //dentrArrow.style.borderBottomWidth = "0px";//Resets stroke width
-    //document.getElementById("arrowUp2").style.display = "none";
+    soilPool.style.padding = "";
+
+    document.getElementById("treePool").style.background = "#ebf8ca";
+    document.getElementById("treePool").style.boxShadow = "0 0 10px 5px #ebf8ca";
+
+    document.getElementById("soilPool").style.background = "rgb(68, 27, 0)";
+    document.getElementById("soilPool").style.boxShadow = "0 0 10px 5px rgb(68, 27, 0)";
+
+    render();
 
     document.getElementById("decompInc").value = '4.0';
     document.getElementById("uptakeInc").value = '4.0';
@@ -98,7 +104,6 @@ function selectFlow() {
     document.getElementById("arrowRight").style.display = "block";
 
     var fixWidth = document.getElementById("flowIncr").value;
-
 
     var widthNum = (2 * fixWidth) + 1;//Equation for finding stroke width y=2x+2
 
@@ -132,7 +137,7 @@ function dentrificationFlow() {
     borderRight = Number(borderRight.slice(0, borderRight.length - 2));
     dentrArrow.style.borderRightWidth = (borderRight + widthNum) + 'px';
 
-    var widthDen = (2 * fixWidth / 2) + 17;
+    var widthDen = (2 * fixWidth / 2) + 19;
     var arrHeadChange = arrowUp2.style.right;
     arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
     arrowUp2.style.right = (arrHeadChange + widthDen) + 'px';
@@ -161,7 +166,7 @@ function uptakeFlow() {
         borderRight = Number(borderRight.slice(0, borderRight.length - 2));
         uptakeArrow.style.borderRightWidth = (borderRight + widthNum) + 'px';
 
-        var widthUptake = (2 * fixWidth / 2) + 19;
+        var widthUptake = (2 * fixWidth / 2) + 6;
         var arrHeadChange = arrowUp.style.right;
         arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
         arrowUp.style.right = (arrHeadChange + widthUptake) + 'px';
@@ -178,7 +183,7 @@ function decompFlow() {
     if (document.getElementById("decompInc").value != 0) {
         document.getElementById("arrowDown").style.display = "block";
         decompArrow.style.borderRightWidth = "";//Resets stroke width
-        arrowDown.style.right = "";
+        arrowDown.style.left = "";
         decompArrow.style.display = "block";
         var fixWidth = document.getElementById("decompInc").value;
         var widthNum = (2 * fixWidth) + 1;//Equation for finding stroke width y=2x+2
@@ -187,10 +192,10 @@ function decompFlow() {
         borderRight = Number(borderRight.slice(0, borderRight.length - 2));
         decompArrow.style.borderRightWidth = (borderRight + widthNum) + 'px';
 
-        var widthDecomp = (2 * fixWidth / 2) + 180;
+        var widthDecomp = (2 * fixWidth / 2) - 67;
         var arrHeadChange = arrowDown.style.right;
         arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
-        arrowDown.style.right = (arrHeadChange + widthDecomp) + 'px';
+        arrowDown.style.left = (arrHeadChange + widthDecomp) + 'px';
 
 
     } else {

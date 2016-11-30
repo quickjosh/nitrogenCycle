@@ -14,16 +14,16 @@ body {/*Overall font-size defined*/
 }
 
 #treePool {/*tree pool container*/
-    background: rgba(151, 255, 0, 0.7);
-    box-shadow: 0 0 10px 5px rgba(151, 255, 0, 0.7);
+    background: #ebf8ca;
+    box-shadow: 0 0 10px 5px #ebf8ca;
     margin: auto;
     position: absolute;
-    top: 20px;
+    top: -21px;
     right: 0;
     bottom: 0;
     left: 0;
-    height:114px;
-    width: 207px;
+    height:67px;
+    width: 161px;
     border-radius:50%;
     text-align:center;
 }
@@ -36,7 +36,6 @@ body {/*Overall font-size defined*/
     height: 200px;
     display: block;
     justify-content: center;
-
 }
 
 .soilPosition {
@@ -58,7 +57,7 @@ body {/*Overall font-size defined*/
     right: 0;
     bottom: 0;
     left: 0;
-    width: 130px ;
+    width: 141px ;
     height:10px;
     padding:65px;
     background: rgb(68, 27, 0);
@@ -69,6 +68,7 @@ body {/*Overall font-size defined*/
 
 #timeElapsed {/*years container*/
     position:absolute;
+    background: rgba(255, 255, 255,.8);
     top:25px;
     right:20px;
     text-align:center;
@@ -92,18 +92,19 @@ body {/*Overall font-size defined*/
 #year {/*year value span*/
     padding:0 0 0 5px!important;
     float:right!important;
+    font-weight:bolder;
 }
 
 #tree/*containers for tree/soil value readouts*/  {
     z-index:20;
     position:absolute;
     left:120px;
-    top: 60px;
+    top: 41px;
     background: #367300;
     color:#fff;
     padding:10px;
     border-radius:7px;
-    width:23px;
+    width:28px;
     height:15px;
     border: solid 2px white;
     text-align:center;
@@ -119,7 +120,7 @@ body {/*Overall font-size defined*/
     padding:10px;
     border-radius:7px;
     height:15px;
-    width:23px;
+    width:28px;
     border: solid 2px white;
     text-align:center;
 }
@@ -136,7 +137,7 @@ body {/*Overall font-size defined*/
     text-align:center;
 }
 
-.optionHeader {
+.treepoolHeader {
     margin:20px 0 0 -2px!important;
     color:#fff;
     font-size:11px;
@@ -144,7 +145,16 @@ body {/*Overall font-size defined*/
     font-weight:bolder;
 }
 
+.optionHeader {
+    color: #fff;
+    font-size:11px;
+    text-align:left;
+    margin:20px 0!important;
+    font-weight:bolder;
+}
+
 .optionHeaderDark {
+    text-shadow: 0 0 5px #fff;
     color: #000000;
     font-size:11px;
     text-align:left;
@@ -229,7 +239,7 @@ body {/*Overall font-size defined*/
     font-size:14px;
     position:absolute;
     padding:5px 0;
-    top: 110px;
+    top: 85px;
     left:117px;
     right:0;
     text-align:center;
@@ -244,7 +254,7 @@ body {/*Overall font-size defined*/
     position:absolute;
     padding:5px 0;
     top: 406px;
-    left:255px;
+    left:257px;
     right:0;
     text-align:center;
     border-radius:7px;
@@ -267,7 +277,7 @@ button:hover {/*button states*/
     top: 55px;
     left:37px;
     height:427px;
-    width:112px;
+    width:42px;
     border-bottom-left-radius:8px;
     border-left:1px solid #63a941;
     border-bottom:1px solid #63a941;
@@ -323,7 +333,8 @@ select {
     position: absolute;
     margin: auto;
     top: 0;
-    right:180px;
+    right:70px;
+    left:-70px;
     width: 0;
     height: 0;
     border-left: 12px solid transparent;
@@ -336,7 +347,8 @@ select {
     position: absolute;
     margin: auto;
     bottom:5px;
-    right:19px;
+    left:149px;
+    right:-149px;
     width: 0;
     height: 0;
     border-left: 12px solid transparent;
@@ -347,35 +359,39 @@ select {
 #uptakeArrow {
     position: absolute;
     border-right: 1px solid #c84c00;
-    bottom: -165px;
-    right:31px;
-    height:170px;
+    bottom: -115px;
+    right:136px;
+    left:-136px;
+    height:194px;
 }
 
 #decompArrow {
     display:none;
     position: absolute;
     border-right: 1px solid #63a941;
-    top: -170px;
-    right:192px;
-    height:170px;
+    top:241px;
+    left:138px;
+    height:187px;
 }​,
 
 .soilTitle {
+    font-size:13px;
     color:#fff;
      position:absolute;
      bottom:95px;
-     right:140px;
+     right:150px;
     z-index:1000;
      font-weight:bolder;
  }
 
 .treeTitle {
+    font-size:13px;
     font-weight:bolder;
     z-index:1000;
     position:absolute;
-    top:178px;
+    top:159px;
     left:175px;
+    text-shadow: 0 0 5px #fff;
 
 }
 
