@@ -127,12 +127,11 @@ body {/*Overall font-size defined*/
 
 .controlContainer {/*positioning for start/reset buttons*/
     position:absolute;
-    bottom: 5px;
+    bottom: 12px;
     left:0;
     right:0;
     color:#fff;
-    padding:10px;
-    border-radius:7px;
+    padding:5px;
     text-align:center;
 }
 
@@ -263,11 +262,12 @@ button {/*button styles*/
      font-size:14px!important;
      border-radius:5px;
      padding:5px;
-     border:1px solid gray;
+     margin:0 2px;
+     border:1px solid #aeaeae;
  }
 
 button:hover {/*button states*/
-    background: #fff;
+    background: #dadada;
 }
 
 #flowIncrArrow {/*flowIncr line*/
@@ -359,7 +359,7 @@ select {
     position: absolute;
     border-right: 1px solid #c84c00;
     top: 118px;
-    right:136px;
+    right:137px;
     left:-136px;
     height:204px;
 }
@@ -369,7 +369,7 @@ select {
     position: absolute;
     border-right: 1px solid #63a941;
     top:241px;
-    left:138px;
+    left:137px;
     height:195px;
 }​,
 
@@ -391,7 +391,20 @@ select {
     top:159px;
     left:180px;
     text-shadow: 0 0 5px #fff;
+}
 
+span.glyphicons:before {
+    font-size:13px;
+}
+
+span.glyphicons.plus {
+    padding-left:18px;
+    margin: -16px 0 0  0;
+}
+
+span.glyphicons.restart {
+    padding-left:20px;
+    margin: -16px 0 0 0;
 }
 
 
