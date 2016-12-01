@@ -26,9 +26,9 @@ function flowMaker() {//Button for increasing fixation
     trees += ((uptakeValue * 10) - (decompValue * 10));//equations for output
     if (trees<=0) {
         trees = 0;
-        document.getElementById("treePool").style.background = "none";
-        document.getElementById("treePool").style.boxShadow = "none";
-        document.getElementById("treePool").style.padding = "29px";
+        document.getElementById("treePool").style.background = "rgba(68, 27, 0, .1)";
+        document.getElementById("treePool").style.boxShadow = "0 0 10px 5px rgba(68, 27, 0, .1)";
+        document.getElementById("treePool").style.padding = "11px";
 
     } else {
         document.getElementById("treePool").style.background = "";
@@ -54,16 +54,14 @@ function render() {//created to stop redundancy in the resetValue function
     document.getElementById("tree").innerHTML = trees;
     document.getElementById("year").innerHTML = years;
     document.getElementById("soil").innerHTML = soilNum;
-    soilPool.style.padding = Math.round(soilNum/30 + 50) + 'px';//
-    treePool.style.padding = Math.round(trees/30 + 10) + 'px';//
-    if (soilNum>=820) {
-        document.getElementById("soilPool").style.padding = "79px";
-
+    soilPool.style.padding = Math.round(soilNum/30 + 10) + 'px';//
+    treePool.style.padding = Math.round(trees/10 + 10) + 'px';//
+    if (soilNum>=590) {
+        document.getElementById("soilPool").style.padding = "30px";
     }
 
-    if (trees>=710) {
-
-
+    if (trees>=660) {
+        document.getElementById("treePool").style.padding = "76px";
     }
 
 }
@@ -166,7 +164,7 @@ function uptakeFlow() {
         borderRight = Number(borderRight.slice(0, borderRight.length - 2));
         uptakeArrow.style.borderRightWidth = (borderRight + widthNum) + 'px';
 
-        var widthUptake = (2 * fixWidth / 2) + 6;
+        var widthUptake = (2 * fixWidth / 1) - 76;//**why is this portion always commented out? I fixed arrows to be betta**
         var arrHeadChange = arrowUp.style.right;
         arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
         arrowUp.style.right = (arrHeadChange + widthUptake) + 'px';
@@ -192,7 +190,7 @@ function decompFlow() {
         borderRight = Number(borderRight.slice(0, borderRight.length - 2));
         decompArrow.style.borderRightWidth = (borderRight + widthNum) + 'px';
 
-        var widthDecomp = (2 * fixWidth / 2) - 67;
+        var widthDecomp = (2 * fixWidth / 1) - 81;
         var arrHeadChange = arrowDown.style.right;
         arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
         arrowDown.style.left = (arrHeadChange + widthDecomp) + 'px';
