@@ -135,7 +135,7 @@ function dentrificationFlow() {
     borderRight = Number(borderRight.slice(0, borderRight.length - 2));
     dentrArrow.style.borderRightWidth = (borderRight + widthNum) + 'px';
 
-    var widthDen = (2 * fixWidth / 2) + 19;
+    var widthDen = (2 * fixWidth / 1.5) + 18;
     var arrHeadChange = arrowUp2.style.right;
     arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
     arrowUp2.style.right = (arrHeadChange + widthDen) + 'px';
@@ -164,7 +164,7 @@ function uptakeFlow() {
         borderRight = Number(borderRight.slice(0, borderRight.length - 2));
         uptakeArrow.style.borderRightWidth = (borderRight + widthNum) + 'px';
 
-        var widthUptake = (2 * fixWidth / 1) - 76;//**why is this portion always commented out? I fixed arrows to be betta**
+        var widthUptake = (2 * fixWidth) - 76;//**why is this portion always commented out? I fixed arrows to be betta**
         var arrHeadChange = arrowUp.style.right;
         arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
         arrowUp.style.right = (arrHeadChange + widthUptake) + 'px';
