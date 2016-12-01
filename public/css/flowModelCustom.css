@@ -119,7 +119,7 @@ body {
     position: absolute;
     left: 110px;
     bottom: 65px;
-    background: #000000;
+    background: #7d2e17;
     color: #fff;
     padding: 10px;
     border-radius: 7px;
@@ -191,7 +191,7 @@ body {
 }
 
 .selectContainDark2 {
-    background: #c84c00;
+    background: #ea5600;
     padding: 5px 0;
     margin: 7px 0 0 22px;
     border-radius: 5px;
@@ -216,7 +216,7 @@ body {
 }
 
 .selectContainDark {
-    background: #c84c00;
+    background: #ea5600;
     padding: 4px 0;
     margin: 7px 0 5px 0;
     border-radius: 5px;
@@ -301,8 +301,8 @@ button:hover {
     height: 380px;
     width: 110px;
     border-bottom-right-radius: 8px;
-    border-right: 1px dotted #c84c00;
-    border-bottom: 1px dotted #c84c00;
+    border-right: 1px dotted #ea5600;
+    border-bottom: 1px dotted #ea5600;
 }
 
 select {
@@ -333,7 +333,7 @@ select {
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 15px solid #c84c00;
+    border-bottom: 15px solid #ea5600;
 }
 
 #arrowDown {
@@ -361,12 +361,12 @@ select {
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 15px solid #c84c00;
+    border-bottom: 15px solid #ea5600;
 }
 
 #uptakeArrow {
     position: absolute;
-    border-right: 1px dotted #c84c00;
+    border-right: 1px dotted #ea5600;
     top: 118px;
     right: 137px;
     left: -136px;
