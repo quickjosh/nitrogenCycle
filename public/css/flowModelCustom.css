@@ -99,11 +99,10 @@ body {
     font-weight: bolder;
 }
 
-#tree /*containers for tree/soil value readouts*/
-{
+#tree /*containers for tree/soil value readouts*/ {
     z-index: 20;
     position: absolute;
-    left: 120px;
+    left: 109px;
     top: 41px;
     background: #367300;
     color: #fff;
@@ -246,7 +245,7 @@ body {
     position: absolute;
     padding: 5px 0;
     top: 85px;
-    left: 117px;
+    left: 111px;
     right: 0;
     text-align: center;
     border-radius: 7px;
@@ -400,7 +399,7 @@ select {
     z-index: 1000;
     position: absolute;
     top: 159px;
-    left: 180px;
+    left: 170px;
     text-shadow: 0 0 5px #fff;
 }
 
@@ -422,5 +421,18 @@ span.glyphicons.restart {
     margin: -16px 0 0 0;
 }
 
+.meterPosition {
+    position:absolute;
+    left:105px;
+    top:80px;
+    z-index:1000;
+}
+
+.meter2Position {
+    position:absolute;
+    left:106px;
+    top:26px;
+    z-index:1000;
+}
 
 
