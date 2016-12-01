@@ -397,6 +397,10 @@ span.glyphicons:before {
     font-size:13px;
 }
 
+button:disabled span.glyphicons:before {
+    color:graytext;
+}
+
 span.glyphicons.plus {
     padding-left:18px;
     margin: -16px 0 0  0;
