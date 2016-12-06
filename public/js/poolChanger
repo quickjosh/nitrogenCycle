@@ -58,19 +58,10 @@ function render() {//created to stop redundancy in the resetValue function
     treePool.style.padding = Math.round(trees/10 + 10) + 'px';//
     if (soilNum>=590) {
         document.getElementById("soilPool").style.padding = "30px";
-        document.getElementById("soilPool").style.padding = "30px";
-        document.getElementById("nitroSoilFull").style.display = "block";
-    } else {
-        document.getElementById("nitroSoilFull").style.display = "none";
     }
 
     if (trees>=660) {
         document.getElementById("treePool").style.padding = "76px";
-        document.getElementById("nitroTreeFull").style.display = "block";
-
-
-    } else {
-        document.getElementById("nitroTreeFull").style.display = "none";
     }
 
 }
@@ -105,23 +96,23 @@ document.addEventListener("change", selectFlow);
 
 function selectFlow() {
     if (document.getElementById("flowIncr").value != 0) {
-    flowIncrArrow.style.borderLeftWidth = "";//Resets stroke width / 2
-    flowIncrArrow.style.borderBottomWidth = "";//Resets stroke width
-    flowIncrArrow.style.display = "block";
-    document.getElementById("arrowRight").style.display = "block";
+        flowIncrArrow.style.borderLeftWidth = "";//Resets stroke width / 2
+        flowIncrArrow.style.borderBottomWidth = "";//Resets stroke width
+        flowIncrArrow.style.display = "block";
+        document.getElementById("arrowRight").style.display = "block";
 
-    var fixWidth = document.getElementById("flowIncr").value;
+        var fixWidth = document.getElementById("flowIncr").value;
 
-    var widthNum = (2 * fixWidth) + 1;//Equation for finding stroke width y=2x+2
+        var widthNum = (2 * fixWidth) + 1;//Equation for finding stroke width y=2x+2
 
-    var borderLeft = flowIncrArrow.style.borderLeftWidth;//Increases stroke width left
-    borderLeft = Number(borderLeft.slice(0, borderLeft.length - 2));
-    flowIncrArrow.style.borderLeftWidth = (borderLeft + widthNum) + 'px';
+        var borderLeft = flowIncrArrow.style.borderLeftWidth;//Increases stroke width left
+        borderLeft = Number(borderLeft.slice(0, borderLeft.length - 2));
+        flowIncrArrow.style.borderLeftWidth = (borderLeft + widthNum) + 'px';
 
-    var borderBottom = flowIncrArrow.style.borderBottomWidth;//Increases stroke width bottom
-    borderBottom = Number(borderBottom.slice(0, borderBottom.length - 2));
-    flowIncrArrow.style.borderBottomWidth = (borderBottom + widthNum) + 'px';
-} else {
+        var borderBottom = flowIncrArrow.style.borderBottomWidth;//Increases stroke width bottom
+        borderBottom = Number(borderBottom.slice(0, borderBottom.length - 2));
+        flowIncrArrow.style.borderBottomWidth = (borderBottom + widthNum) + 'px';
+    } else {
         flowIncrArrow.style.display = "none";
         document.getElementById("arrowRight").style.display = "none";
     }
@@ -131,27 +122,27 @@ document.addEventListener("change", dentrificationFlow);
 
 function dentrificationFlow() {
     if (document.getElementById("dentInc").value != 0) {
-    document.getElementById("arrowUp2").style.display = "block";
-    dentrArrow.style.display = "block";
-    dentrArrow.style.borderRightWidth = "";//Resets stroke width
-    dentrArrow.style.borderBottomWidth = "";//Resets stroke width
-    arrowUp2.style.right = "";
+        document.getElementById("arrowUp2").style.display = "block";
+        dentrArrow.style.display = "block";
+        dentrArrow.style.borderRightWidth = "";//Resets stroke width
+        dentrArrow.style.borderBottomWidth = "";//Resets stroke width
+        arrowUp2.style.right = "";
 
-    var fixWidth = document.getElementById("dentInc").value;
-    var widthNum = (2 * fixWidth) + 1;//Equation for finding stroke width y=2x+2
+        var fixWidth = document.getElementById("dentInc").value;
+        var widthNum = (2 * fixWidth) + 1;//Equation for finding stroke width y=2x+2
 
-    var borderRight = dentrArrow.style.borderRightWidth;//Increases stroke width right
-    borderRight = Number(borderRight.slice(0, borderRight.length - 2));
-    dentrArrow.style.borderRightWidth = (borderRight + widthNum) + 'px';
+        var borderRight = dentrArrow.style.borderRightWidth;//Increases stroke width right
+        borderRight = Number(borderRight.slice(0, borderRight.length - 2));
+        dentrArrow.style.borderRightWidth = (borderRight + widthNum) + 'px';
 
-    var widthDen = (2 * fixWidth / 1.5) + 18;
-    var arrHeadChange = arrowUp2.style.right;
-    arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
-    arrowUp2.style.right = (arrHeadChange + widthDen) + 'px';
+        var widthDen = (2 * fixWidth / 1.5) + 18;
+        var arrHeadChange = arrowUp2.style.right;
+        arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
+        arrowUp2.style.right = (arrHeadChange + widthDen) + 'px';
 
-    var rightBorderBottom = dentrArrow.style.borderBottomWidth;//Increases stroke width bottom
-    rightBorderBottom = Number(rightBorderBottom.slice(0, rightBorderBottom.length - 2));
-    dentrArrow.style.borderBottomWidth = (rightBorderBottom + widthNum) + 'px';
+        var rightBorderBottom = dentrArrow.style.borderBottomWidth;//Increases stroke width bottom
+        rightBorderBottom = Number(rightBorderBottom.slice(0, rightBorderBottom.length - 2));
+        dentrArrow.style.borderBottomWidth = (rightBorderBottom + widthNum) + 'px';
     } else {
         dentrArrow.style.display = "none";
         document.getElementById("arrowUp2").style.display = "none";
@@ -211,6 +202,9 @@ function decompFlow() {
     }
 }
 
+var ALPHA = 3;
+var BETA = .5;
+var widthNum = ALPHA * Math.log(BETA * (fixWidth + 1))
 
 
 
