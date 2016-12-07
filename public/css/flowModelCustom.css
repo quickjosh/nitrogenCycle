@@ -288,8 +288,8 @@ button:hover {
     height: 427px;
     width: 54px;
     border-bottom-left-radius: 8px;
-    border-left: 1px dotted #63a941;
-    border-bottom: 1px dotted #63a941;
+    border-left: 1px solid #63a941;
+    border-bottom: 1px solid #63a941;
 }
 
 #dentrArrow {
@@ -301,8 +301,8 @@ button:hover {
     height: 380px;
     width: 110px;
     border-bottom-right-radius: 8px;
-    border-right: 1px dotted #ea5600;
-    border-bottom: 1px dotted #ea5600;
+    border-right: 1px solid #ea5600;
+    border-bottom: 1px solid #ea5600;
 }
 
 select {
@@ -366,7 +366,7 @@ select {
 
 #uptakeArrow {
     position: absolute;
-    border-right: 1px dotted #ea5600;
+    border-right: 1px solid #ea5600;
     top: 118px;
     right: 137px;
     left: -136px;
@@ -376,7 +376,7 @@ select {
 #decompArrow {
     display: none;
     position: absolute;
-    border-right: 1px dotted #63a941;
+    border-right: 1px solid #63a941;
     top: 241px;
     left: 137px;
     height: 195px;
