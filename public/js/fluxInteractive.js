@@ -24,13 +24,12 @@
         }
         var soilNumDisp = Number(soilDisplayElem.innerHTML);//soilNum
         var soilChangePerYear =(soilNum - soilNumDisp) / ((years - yearDisplay) || 1);//soilNum subtracted
-        soilDisplayElem.innerHTML = years === 0 ? soilNum :soilNumDisp + soilChangePerYear;
+        soilDisplayElem.innerHTML = years === 0 ? soilNum : Math.round(soilNumDisp + soilChangePerYear);
 
 
         var treeNumDisp = Number(treeDisplayElem.innerHTML);
         var treeChangePerYear = (trees - treeNumDisp) / ((years - yearDisplay) || 1);
-        treeDisplayElem.innerHTML = years === 0 ? trees : treeNumDisp + treeChangePerYear;
-
+        treeDisplayElem.innerHTML = years === 0 ? trees : Math.round(treeNumDisp + treeChangePerYear);
 
     }, 300);
 
