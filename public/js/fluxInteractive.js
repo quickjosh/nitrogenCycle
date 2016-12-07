@@ -8,18 +8,45 @@ var decompArrow = document.getElementById("decompArrow");//Container for arrow
 var soilPool = document.getElementById("soilPool");//Container for soilPool
 var treePool = document.getElementById("treePool");//Container for treePool
 var years, trees, soilNum;//Variables for reset function to change
+var yearsDisplay = document.getElementById('year')
+setDefault();
 resetValue();//Call for reset function
 
+//function displayCount(count) {//counter closure for countdown
+//    return function () {
+//        document.getElementById("year").innerHTML = count;
+//    }
+//}
+//
+//function countdown(){//a loop for showing count
+//    for (var i = years-10; i<=years; i++){
+//        setTimeout(displayCount(i), i*300)//sets timer duration i*allows each interval work smoothly
+//    }
+//}
 
+setInterval(function(){
+    var yearDisplay = Number(yearsDisplay.innerHTML)
+    if (yearDisplay < years){
+        yearsDisplay.innerHTML = yearDisplay + 1;
+    }
+},300)
+
+function setDefault() {
+    document.getElementById("decompInc").value = '4.0';
+    document.getElementById("uptakeInc").value = '4.0';
+    document.getElementById("flowIncr").value ='2.0';
+    document.getElementById("dentInc").value = '2.0';
+}
 
 function flowMaker() {//Button for increasing fixation
-
     var fixValue = document.getElementById("flowIncr").value;//Points to value for options
     var dentValue = document.getElementById("dentInc").value;//Points to value for options
     var uptakeValue = document.getElementById("uptakeInc").value;//Points to value for options
     var decompValue = document.getElementById("decompInc").value;//Points to value for options
+    years += 10;
+    displayCount();
+    //countdown();
 
-    years += 10;//Value for year incrementer
     years === 500 ? (document.getElementById("10years").disabled = true) : false;//Disables button at value 50years
 
     soilNum += ((fixValue * 10) + (decompValue * 10)) - ((uptakeValue * 10) + (dentValue * 10));//equations for output
@@ -90,10 +117,6 @@ function resetValue() {//resets value for years, trees soil and padding.
 
     render();
 
-    document.getElementById("decompInc").value = '4.0';
-    document.getElementById("uptakeInc").value = '4.0';
-    document.getElementById("flowIncr").value ='2.0';
-    document.getElementById("dentInc").value = '2.0';
     document.getElementById("10years").disabled = false;
     window.onLoad = decompFlow();
     window.onLoad = uptakeFlow();
@@ -203,14 +226,11 @@ function decompFlow() {
         var arrHeadChange = arrowDown.style.right;
         arrHeadChange = Number(arrHeadChange.slice(0, arrHeadChange.length-2));
         arrowDown.style.left = (arrHeadChange + widthDecomp) + 'px';
-
-
     } else {
         decompArrow.style.display = "none";
         document.getElementById("arrowDown").style.display = "none";
     }
 }
-
 
 
 
