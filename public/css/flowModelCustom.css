@@ -17,7 +17,7 @@ body {
 
 #treePool {
     /*tree pool container*/
-    background: #ebf8ca;
+    background: rgb(235, 248, 202);
     box-shadow: 0 0 10px 5px #ebf8ca;
     margin: auto;
     position: absolute;
@@ -25,8 +25,9 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 50px;
-    width: 130px;
+    height: 73px;
+    width: 146px;
+
     border-radius: 50%;
     text-align: center;
 }
@@ -60,9 +61,11 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
+    height: 104px;
+    width: 208px;
     left: 0;
-    width: 211px;
-    height: 90px;
+    /*width: 211px;*/
+    /*height: 90px;*/
     background: rgb(68, 27, 0);
     border-radius: 50%;
     text-align: center;
@@ -118,7 +121,7 @@ body {
     z-index: 20;
     position: absolute;
     left: 110px;
-    bottom: 65px;
+    bottom: 34px;
     background: #7d2e17;
     color: #fff;
     padding: 10px;
@@ -239,7 +242,7 @@ body {
 
 .decompContain {
     z-index: 1000;
-    height: 45px;
+    height: 70px;
     width: 60px;
     font-size: 14px;
     position: absolute;
@@ -286,7 +289,7 @@ button:hover {
     top: 55px;
     left: 37px;
     height: 427px;
-    width: 54px;
+    width: 100px;
     border-bottom-left-radius: 8px;
     border-left: 1px solid #63a941;
     border-bottom: 1px solid #63a941;
@@ -379,7 +382,7 @@ select {
     border-right: 1px solid #63a941;
     top: 241px;
     left: 137px;
-    height: 195px;
+    height: 205px;
 }
 
 ​,
@@ -387,7 +390,7 @@ select {
     font-size: 13px;
     color: #fff;
     position: absolute;
-    bottom: 110px;
+    bottom: 80px;
     left: 175px;
     z-index: 1000;
     font-weight: bolder;
@@ -424,7 +427,7 @@ span.glyphicons.restart {
 .meterPosition {
     position:absolute;
     left:105px;
-    top:80px;
+    top:116px;
     z-index:1000;
 }
 
@@ -436,6 +439,7 @@ span.glyphicons.restart {
 }
 
 #nitroSoilFull {
+    display:none;
     position:absolute;
     left:62px;
     top:394px;
@@ -443,6 +447,7 @@ span.glyphicons.restart {
 }
 
 #nitroTreeFull {
+    display:none;
     position:absolute;
     left:62px;
     top:64px;

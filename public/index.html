@@ -6,52 +6,57 @@
     <link rel="stylesheet" type="text/css" href="css/flowModelCustom.css">
     <link rel="stylesheet" type="text/css" href="css/glyphicons.css">
     <!--<script-->
-            <!--src="https://code.jquery.com/jquery-3.1.1.js"-->
-            <!--integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="-->
-            <!--crossorigin="anonymous"></script>-->
+    <!--src="https://code.jquery.com/jquery-3.1.1.js"-->
+    <!--integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="-->
+    <!--crossorigin="anonymous"></script>-->
 </head>
 <body>
 <div id="flowContainer">
     <img id="nitroSoilFull" src="images/nitroSoilFull.png" alt="soil meter" height="180" width="300">
     <img id="nitroTreeFull" src="images/nitroTreeFull.png" alt="tree meter" height="287" width="300">
+
     <div class="flowIncrContain">
         <span class="optionHeaderDark">Fixation</span>
+
         <div class="selectContain">
-    <select id="flowIncr">
-        <option value='0'>0.0</option>
-        <option value='.5'>0.5</option>
-        <option value='1.0'>1.0</option>
-        <option value='1.5'>1.5</option>
-        <option value='2.0'>2.0</option>
-        <option value='2.5'>2.5</option>
-    </select>
-    </div>
+            <select id="flowIncr">
+                <option value='0'>0.0</option>
+                <option value='.5'>0.5</option>
+                <option value='1.0'>1.0</option>
+                <option value='1.5'>1.5</option>
+                <option value='2.0'>2.0</option>
+                <option value='2.5'>2.5</option>
+            </select>
+        </div>
     </div>
     <div id="timeElapsed">
         <span>Time Elapsed (Year):<span id='year'>0</span></span>
     </div>
     <span class="treeTitle">TREE NITROGEN</span>
-    <div class= "treePosition">
+
+    <div class="treePosition">
         <img class="meter2Position" src="images/treeMeter.png" alt="tree meter" height="28" width="10">
+
         <div class="decompContain">
             <span class="optionHeaderDark">Decomposition</span>
+
             <div class="selectContain">
-            <select id="decompInc">
-                <option value='0'>0.0</option>
-                <option value='1.0'>1.0</option>
-                <option value='2.0'>2.0</option>
-                <option value='3.0'>3.0</option>
-                <option value='4.0'>4.0</option>
-                <option value='5.0'>5.0</option>
-            </select>
+                <select id="decompInc">
+                    <option value='0'>0.0</option>
+                    <option value='1.0'>1.0</option>
+                    <option value='2.0'>2.0</option>
+                    <option value='3.0'>3.0</option>
+                    <option value='4.0'>4.0</option>
+                    <option value='5.0'>5.0</option>
+                </select>
             </div>
         </div>
         <div id='tree'>60</div>
         <div id="uptakeArrow"></div>
-    <div id="treePool">
-        <div id="arrowUp"></div>
+        <div id="treePool">
+            <div id="arrowUp"></div>
 
-    </div>
+        </div>
     </div>
     <div id="flowIncrArrow">
         <!--<span class="glyphicons chevron-right"></span>-->
@@ -59,6 +64,7 @@
 
     <div class="dentContain">
         <span class="optionHeader">Dentrification</span>
+
         <div class="selectContainDark2">
             <select id="dentInc">
                 <option value='0'>0.0</option>
@@ -87,26 +93,28 @@
         <span class="optionHeader" style="margin:0 0 0 -20px!important">Uptake</span>
     </div>
     <span class="soilTitle">SOIL NITROGEN</span>
+
     <div class="soilPosition">
         <img class="meterPosition" src="images/soilMeter.png" alt="soil meter" height="28" width="10">
+
         <div id='soil'>120</div>
-    <div id="soilPool">
+        <div id="soilPool">
 
-        <span id="arrowRight"></span>
-        <span id="arrowDown"></span>
+            <span id="arrowRight"></span>
+            <span id="arrowDown"></span>
 
-    </div>
+        </div>
     </div>
     <div class="controlContainer">
-    <button id='10years' onClick="flowMaker()"><span class="glyphicons plus"></span>10 Years</button>
-    <button id='reset' onClick="resetValue()"><span class="glyphicons restart"> </span>Reset</button>
+        <button id='10years' onClick="flowMaker()"><span class="glyphicons plus"></span>10 Years</button>
+        <button id='reset' onClick="resetValue()"><span class="glyphicons restart"> </span>Reset</button>
+        <button id='default' onClick="setDefault()"><span class="glyphicons restart"> </span>Default</button>
     </div>
     <div id="dentrArrow"></div>
     <span id="arrowUp2"></span>
 </div>
 
 <script src="js/fluxInteractive.js"></script>
-<script src="js/counter.js"></script>
 
 </body>
 </html>
